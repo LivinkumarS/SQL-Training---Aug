@@ -1,0 +1,78 @@
+Database
+---------
+>> A databse is a structured collection of data.
+>> That might be inter-related with each other.
+
+RDBMS -> Relational Database Management System. (SQLDB)
+------------------------------------------------
+>> The DB that stores data in tables. it allows relationship between multiple tables.
+>> SQL is used to manipulate the data.
+EX: MySQl, PostgreSQL, Oracle....
+
+Non Relational DB Management System
+------------------------------------
+>> The DB that stores data in document or object form.
+EX: MongoDB, Casendra, MariaDB...
+
+MySQL 
+-----
+>> Open-source, widely used RDBMS.
+>> Uses SQL(Structured Query Language)
+
+SQL-(Structured Query Language) basic syntax.
+----------------------------------------------
+>> This language is case-insensitive. (SELECT) or (Select) or (SeLeCt). keywords are usually wrttten in Upprecase.
+>>Every Query should end with ";"
+
+SQL sheet --> .sql
+
+DataBase-->multiple tables --> data.
+
+employees_record---> employee_list ---> (id, name),(id,name)
+                ---> employee_salary --> (employee, salary)
+
+
+DataTypes Of MySQL:
+-------------------
+Numeric DataTypes
+------------------
+int --> whole number --> Ex: 23,1,0,-1,-22
+decimal(p,q) --> p-->length of base integer, q--> length of decimal places. decimal(2,0)--> 567.4567
+float -->78.87878, 56.6678
+double --> large decimal numbers.
+
+String Datatypes 
+----------------
+char(n) ---> fixed length char string...ex: char(5)-->"Hello","Hello world", "Hi". char(3)-->"Hi"
+varchar(n) ---> variable char length string --> Ex: varchar(5) -->"Hi", "Hello","Velu". Varchar(3)--->"HiHi"
+Text --> used to fetch log para.
+ENUM ---> Predefined set of values. ENUM ("male", "female", "others").
+
+Boolean
+--------
+Boolean --> 1 or 0
+
+Date and time DataTypes
+-----------------------
+DATE --->  only date --> 'yyyy-mm-dd'
+TIME ---> stores only time --> 'HH:MM:SS'
+DATETIME --> stores the both
+
+Constraints
+-------------
+Primary key ---> It identifies each row in a table uniquely. 
+
+
+Queries
+-------
+To Create a New Schema ---> CREATE DATABASE "db name";
+
+To select a DB --> USE dbname;
+
+To Create a New Table ---> CREATE TABLE tableName( 
+    name1 datatype constraints,
+    name2 datatype constraints,
+    .
+    .
+    .
+ )
