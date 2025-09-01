@@ -58,6 +58,51 @@ DATE --->  only date --> 'yyyy-mm-dd'
 TIME ---> stores only time --> 'HH:MM:SS'
 DATETIME --> stores the both
 
+
+Operators
+---------
+= ---> Equal
+> Greater Than
+< lesser than 
+>= gt equal 
+<= lt equal 
+<>,!= not equal to
+
+Logical Operators 
+------------------
+AND ---> True --> when both conditions are true. 
+OR  ---> True --> when any one of given conditions is true
+NOT ---> inverts a single condition . False---> True, True--> False
+
+cond1  cond2
+True   True
+True   False
+False  True
+False  False
+
+Special Operators.
+-------------------
+BETWEEN --> filters using a range
+BETWEEN val1 AND val2;
+
+IN ---> filters using multiple values.
+IN (val1,val2....)
+
+LIKE ---> Pattern matching.
+employeeName like 'pattern'
+
+wildcards
+---------
+%  --->  matches zero or more chars.
+_  --->  matches exactly one char.
+
+"a%"---> 'a','anitha','aaron'
+"%y"---> 'y','ajay', 'priya'(X)
+"%y__" ---> 'priya'
+
+Limit, offset
+
+
 Constraints
 -------------
 Primary key ---> It identifies each row in a table uniquely. 
@@ -76,3 +121,19 @@ To Create a New Table ---> CREATE TABLE tableName(
     .
     .
  )
+
+To Insert a New Data--> INSERT INTO tbname (col details) VALUES (),(),();
+To retrive the data from a table ---> SELECT (col details or *) FROM tableName  (filteration);
+
+
+CRUD Operations
+---------------
+Create ---> INSERT
+Read --> SELECT
+
+
+Filtering Results
+-------------------
+WHERE condition.
+Ex: WHERE id=3
+
