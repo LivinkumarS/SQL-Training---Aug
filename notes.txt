@@ -102,6 +102,14 @@ _  --->  matches exactly one char.
 
 Limit, offset
 
+LIMIT---> Restrict the number of rows returned by a query. 
+Ex: LIMIT 3;
+
+OFFSET---> OFFSET specifies where to start retriving rows.
+
+ORDER BY ---> Arranging the result either in ASC or DESC.
+Ex: Order by col asc(desc);
+
 
 Constraints
 -------------
@@ -124,16 +132,33 @@ To Create a New Table ---> CREATE TABLE tableName(
 
 To Insert a New Data--> INSERT INTO tbname (col details) VALUES (),(),();
 To retrive the data from a table ---> SELECT (col details or *) FROM tableName  (filteration);
+to update the existing data --> UPDATE tbname SET col1="val",col2="val".....
+to delete a record from a table ---> DELETE FROM tbname WHERE condition;
 
 
 CRUD Operations
 ---------------
 Create ---> INSERT
 Read --> SELECT
+Update ---> UPDATE
+delete --> DELETE
 
 
 Filtering Results
 -------------------
 WHERE condition.
 Ex: WHERE id=3
+
+
+Functions in MySQL 
+--------------------
+>> Predefined methods used to perform operations on a data.
+
+Numeric Functions 
+-----------------
+1) ROUND(num, place) ---> Round off number to the nearest integer. Ex: round(7.68)-->8. Ex: round(7.6453445,5)-->7.64534.
+2) CEIL(num) ---> Rounds up the decimal number. ceil(7.00002)-->8
+3)Floor(num) ---> Rounds down the decimal number. floor(8.5467)-->8
+4) ABS(value) ---> absolute value. abs(-4) --> 4
+5) MOD(x,y) ---> reminder. mod(50,6) -->2
 
