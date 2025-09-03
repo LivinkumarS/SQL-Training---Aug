@@ -162,3 +162,20 @@ Numeric Functions
 4) ABS(value) ---> absolute value. abs(-4) --> 4
 5) MOD(x,y) ---> reminder. mod(50,6) -->2
 
+String Functions
+----------------
+1) CONCAT(str1, str2......)---> joins strings...
+2) LENGTH(str) --> length of the string.
+3) UPPER(str) --> convert into uppercase
+4) LOWER(str) --> convert into lowercase
+5) TRIM(str) --> Removes leading and trailing spaces
+6) SUBSTRING(str, str, no of char)---? extract part of a string.
+7) REPLACE(actual string, substring to be replaced, string) --> to replace a substring with another
+
+Date and time
+---------------
+NOW() --> current date and time.
+CURDATE() --> date
+CURTIME() --> time.
+DATEDIFF(date1, date2) --> difference between these two dates.
+
