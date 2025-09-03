@@ -113,8 +113,14 @@ Ex: Order by col asc(desc);
 
 Constraints
 -------------
-Primary key ---> It identifies each row in a table uniquely. 
+>> Rules applied to columns
 
+>> UNIQUE --> Ensures all values in a column are unique.
+>> NOT NULL --> ensures a column cannot store a NULL.
+>> Primary key ---> It identifies each row in a table uniquely. 
+>> Auto_increment --> geerates sequential numbers for column. 1,2,3,4,.....
+>> Default --> To provide a default value. (default 1)
+>> Foreign key --> links one table's column to another table's primary key.
 
 Queries
 -------
