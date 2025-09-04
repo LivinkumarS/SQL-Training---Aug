@@ -185,3 +185,17 @@ CURDATE() --> date
 CURTIME() --> time.
 DATEDIFF(date1, date2) --> difference between these two dates.
 
+Joins 
+------
+>> To join two tables while retriving data.
+
+Types 
+------
+1) Inner join ---> Returns rows where matching values exist in both tables
+Ex:select * from cricketerlist INNER JOIN cricketerteam on cricketerteam.playerKey=cricketerlist.id;
+
+2) Left join ---> Returns every rows from left. then it will matches the data from right.
+Ex:select * from cricketerlist LEFT JOIN cricketerteam on cricketerteam.playerKey=cricketerlist.id;
+
+2) Right join ---> Returns every rows from right. then it will matches the data from right.
+Ex:select * from cricketerlist RIGHT JOIN cricketerteam on cricketerteam.playerKey=cricketerlist.id;
